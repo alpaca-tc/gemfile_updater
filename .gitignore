@@ -1,0 +1,22 @@
+# 上記に"無視したくないファイル"としてリスト化した中から、さらに"無視したいファイル"を指定する。
+.node_modules
+.bundle/*
+
+~
+\~
+.*~
+*.*~
+.*~
+*.*swp
+.*swp
+.DS_Store
+tags
+.swg
+.swh
+.swi
+.swj
+.swk
+.swl
+.swm
+.swn
+.swo

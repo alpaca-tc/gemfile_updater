@@ -1,0 +1,22 @@
+#!/usr/bin/env ruby
+
+$PATH = File.expand_path('../../lib', __FILE__)
+
+require 'compare_linker'
+require 'optparse'
+
+options = {}
+
+OptionParser.new { |opts|
+  opts.banner = 'Usage: ./bin/gemfile_compare [options]'
+
+  opts.on('-p', '--pull-request ID', 'Pull Request ID') do |id|
+    options[:pull_request] = id.to_i
+  end
+
+  opts.on('-repo', '--repository pixiv/factory', 'Repository pixiv/factory') do |v|
+    options[:repository] = v
+  end
+}.parse!
+
+puts CompareLinker.new(options[:repository], options[:pull_request]).make_compare_links
