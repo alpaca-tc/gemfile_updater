@@ -1,0 +1,5 @@
+After commit `Gemfile.lock`
+
+```
+./bin/gem_updater --repository alpaca-tc/gem_updater --pull-request 1077
+```
