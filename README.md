@@ -5,7 +5,11 @@ After create pull-request
 ```
 # Generate access token https://github.com/settings/tokens
 export OCTOKIT_ACCESS_TOKEN=328.....
-./bin/gem_updater --repository alpaca-tc/gem_updater --pull-request 1
+
+git clone https://github.com/alpaca-tc/gemfile_updater
+cd gemfile_updater
+
+bundle exec ruby ./bin/gem_updater --repository alpaca-tc/gem_updater --pull-request 1
 ```
 
 **output**
