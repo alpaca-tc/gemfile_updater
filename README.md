@@ -9,6 +9,7 @@ export OCTOKIT_ACCESS_TOKEN=328.....
 git clone https://github.com/alpaca-tc/gemfile_updater
 cd gemfile_updater
 
+bundle install --path .bundle
 bundle exec ruby ./bin/gem_updater --repository alpaca-tc/gem_updater --pull-request 1
 ```
 
